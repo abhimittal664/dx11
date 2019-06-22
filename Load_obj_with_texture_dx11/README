@@ -1,1 +1,25 @@
+The code for this project has been borrowed from http://www.informit.com/content/images/9780134115955/downloads/DirectXEssentials_SourceCode.zip and works on Visual Studio 2013.
 
+About the project:
+The directx 11 project loads a mesh defined in obj format, applies texture to it and displays on screen. Index drawcalls are currently not supported. Only direct drawcalls can be issued.
+
+What original project did:
+Original project created and populated buffers manually, did not use textures and did not use MVP transforms. This limited display to only meshes with small number of vertices. Also no per-vertex normal info was available which made lighting calculations (for future projects) on large meshes difficult. 
+Hence best viable way is to give mesh info from a file (obj). Added parser to read and parse obj files with support for
+a. Vertex info
+b. Texture info
+c. Normal info
+d. Face info in "vertex1/texture1/normal1 vertex2/texture2/normal2 vertex3/texture3/normal3" format
+e. Other data is discarded currently
+
+Where:
+The changes are made in following files:
+a. ColoredTriangleDemo.h 
+b. ColoredTriangleDemo.cpp
+
+What:
+		-void load_mesh_from_file(std::string, std::vector<VertexPositionTextureNormal>&);
+        -This reads the obj file, parses it and populates the vector geometry_info after reading indices specified in face info
+    -Texture is loaded in ColoredTriangleDemo::Initialize()
+    -Buffers are created and bind in ColoredTriangleDemo::Initialize()
+    
