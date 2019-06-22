@@ -1,6 +1,9 @@
 The code has been borrowed from http://www.informit.com/content/images/9780134115955/downloads/DirectXEssentials_SourceCode.zip 
 and works on Visual Studio 2013.
 
+Dependencies:
+Uses Boost c++ libraries
+
 About the project:
 The directx 11 project loads a mesh defined in obj format, applies texture to it and displays on screen. Index drawcalls are currently 
 not supported. Only direct drawcalls can be issued.
