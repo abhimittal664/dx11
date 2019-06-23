@@ -23,6 +23,8 @@ Where:
 The changes are made in following files:
 a. ColoredTriangleDemo.h 
 b. ColoredTriangleDemo.cpp
+c. VertexShader.hlsl
+d. PixelShader.hlsl
 
 What:
      -void load_mesh_from_file(std::string, std::vector<VertexPositionTextureNormal>&);
