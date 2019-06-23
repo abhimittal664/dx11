@@ -30,3 +30,5 @@ What:
     -Texture is loaded in ColoredTriangleDemo::Initialize()
     -Buffers are created and bind in ColoredTriangleDemo::Initialize()
     
+How to use:
+Project setup is the same as in the link. Replace the files provided here.
