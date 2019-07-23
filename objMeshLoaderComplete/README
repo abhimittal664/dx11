@@ -1,1 +1,15 @@
+This is an implementation of Obj Mesh loader. Part of it is borrowed from https://github.com/Bly7/OBJ-Loader
 
+It reads in an obj file and obj mtl file.
+It builds vertex buffers and index buffers for loaded meshes
+It reads in the textures and builds texture Buffers
+It binds all the resources for a mesh and issues drawcalls
+It also implements camera controls using keyboard
+
+How to use:
+ColoredTriangleDemo.h has function definitions- Copy paste in your code
+ColoredTriangleDemo.cpp has function implementations- Copy paste in your code
+Include objMeshLoader header in your code
+
+What doesnt work (TODO):
+Texcoords are not bound correctly since obj format uses indexing differently for textures 
