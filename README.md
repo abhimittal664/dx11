@@ -5,7 +5,7 @@ Dependencies:
 Uses Boost c++ libraries
 
 
-1. Ocean Simulation Demo: Attempt 1
+1. Ocean Simulation Demo: Attempt 1 (Display artifacts due to gif compression)
 
 
 
