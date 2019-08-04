@@ -5,4 +5,4 @@ Dependencies:
 Uses Boost c++ libraries
 
 1. Ocean Simulation Demo: Attempt 1
-![Ocean Demo](abhimittal664/dx11/Ocean_135mb_2.gif)
+![Ocean Demo](Ocean_135mb_2.gif)
