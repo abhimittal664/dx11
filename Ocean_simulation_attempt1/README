@@ -1,0 +1,12 @@
+First attempt for simulation ocean (in wireframe mode) using previously uploaded ObjMeshLoader and a flat grid
+Equation used is:
+y1 = A1 . sin (k1x -w1t) for x dir wave
+y2 = A2 . sin (k2z - w2t) for z dir wave
+y_final = y1 + y2;
+
+Runtime controls:
+Q,E,W,S,A,D for Camera movements
+R to reset camera and wave parameters
+Y,H to increase/decrease k  (both waves together)
+U,J to increase/decrease w  (both waves together)
+I,K to increase/decrease A  (both waves together)
